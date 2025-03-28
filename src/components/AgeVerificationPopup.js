@@ -8,7 +8,7 @@ const AgeVerificationPopup = ({ onAccept, onReject, showDenied }) => {
       {!showDenied ? (
         <div className="popup-content">
           <h2>🔞 Før du spiller</h2>
-          <h3>Velkommen til MeisterSocial!</h3>
+          <h3>Velkommen til DesertSocial!</h3>
           <p>Dette er et gratis sosialt casinospill utviklet kun for underholdning.</p>
           
           <ul className="feature-list">
@@ -54,7 +54,7 @@ const AgeVerificationPopup = ({ onAccept, onReject, showDenied }) => {
           <h2>⚠️ Tilgang nektet</h2>
           <p>Du har valgt å ikke godta vilkårene våre.</p>
           <p>Derfor får du ikke tilgang til innholdet på denne siden.</p>
-          <p>MeisterSocial er en gratis sosial casinoplattform kun for underholdning og for brukere over 18 år.</p>
+          <p>DesertSocial er en gratis sosial casinoplattform kun for underholdning og for brukere over 18 år.</p>
           <p>Det tilbys ingen ekte penger, ingen innsats, og ingen gevinster.</p>
           <p className="redirect-text">🔙 Omdirigerer til forsiden...</p>
         </div>

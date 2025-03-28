@@ -51,7 +51,7 @@ const ContactForm = () => {
           <section className="contact-intro">
             <h1>📬 Kontakt Oss</h1>
             <p>Har du spørsmål, tilbakemeldinger eller trenger hjelp?</p>
-            <p>Vi hos MeisterSocial ønsker å høre fra deg!</p>
+            <p>Vi hos DesertSocial ønsker å høre fra deg!</p>
             <p>Enten det gjelder ansvarlig spilling, personvern, tekniske problemer eller samarbeid – vi er her for å hjelpe. 🙌</p>
           </section>
 
@@ -64,7 +64,7 @@ const ContactForm = () => {
                   <li><span>📞</span> <strong>Telefon:</strong> +47 22 83 70 10</li>
                   <li>
                     <span>📍</span> <strong>Adresse:</strong><br />
-                    MeisterSocial AS<br />
+                    DesertSocial AS<br />
                     Dronning Eufemias gate 16<br />
                     0191 Oslo, Norge
                   </li>
@@ -78,7 +78,7 @@ const ContactForm = () => {
 
               <div className="info-card important-info">
                 <h2>💡 Viktig å vite</h2>
-                <p>MeisterSocial tilbyr kun gratis sosiale casinospill for underholdning.</p>
+                <p>DesertSocial tilbyr kun gratis sosiale casinospill for underholdning.</p>
                 <p>Det finnes ingen pengespill, ingen kjøp, og ingen gevinster i ekte penger på denne plattformen.</p>
                 <p>For spørsmål knyttet til ansvarlig spilling, anbefaler vi <a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">www.hjelpelinjen.no</a>.</p>
               </div>

@@ -80,7 +80,7 @@ export default function Footer(){
                             <p>Våre sosiale kasinospill innebærer ingen bruk av ekte penger, og gir ingen mulighet for å vinne gevinster eller kontantpremier.</p>
                             <p>Fremgang i spillene er ikke en indikator på ferdigheter i pengespill med ekte penger.</p>
                             
-                            <p className="disclaimer-footer">Vi oppfordrer til ansvarlig spill, og understreker at spillene på MeisterSocial er ment utelukkende som underholdning.</p>
+                            <p className="disclaimer-footer">Vi oppfordrer til ansvarlig spill, og understreker at spillene på DesertSocial er ment utelukkende som underholdning.</p>
                         </div>
                     </Col>
                     
@@ -100,7 +100,7 @@ export default function Footer(){
             <Container className="footerBottom py-3">
                 <Row>
                     <Col className="text-center">
-                        <p className="copyright">© 2025 MeisterSocial AS – Kun for underholdning. Ingen pengespill. Ingen ekte penger. Ingen pengepremier.</p>
+                        <p className="copyright">© 2025 DesertSocial AS – Kun for underholdning. Ingen pengespill. Ingen ekte penger. Ingen pengepremier.</p>
                     </Col>
                 </Row>
             </Container>

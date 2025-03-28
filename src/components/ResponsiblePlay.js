@@ -20,7 +20,7 @@ const ResponsiblePlay = () => {
                   Sist oppdatert: 27. mars 2025
                 </p>
 
-                <p>Hos MeisterSocial er vi opptatt av at spilling skal være morsomt, trygt og sunt. Vi tilbyr kun sosiale casinospill som er gratis å spille, og som ikke involverer ekte penger.</p>
+                <p>Hos DesertSocial er vi opptatt av at spilling skal være morsomt, trygt og sunt. Vi tilbyr kun sosiale casinospill som er gratis å spille, og som ikke involverer ekte penger.</p>
 
                 <h2>💡 Hva betyr ansvarlig spilling?</h2>
                 <p>Ansvarlig spilling handler om å spille for underholdning – uten at det går utover hverdagen din, økonomien eller forholdene dine.</p>
@@ -41,9 +41,9 @@ const ResponsiblePlay = () => {
                 <p>🔗 <a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">www.hjelpelinjen.no</a></p>
                 <p>📞 800 800 40 (døgnåpent)</p>
 
-                <h2>🔒 Spill trygt på MeisterSocial</h2>
+                <h2>🔒 Spill trygt på DesertSocial</h2>
                 <ul>
-                  <li>MeisterSocial tilbyr kun gratis sosiale casinospill</li>
+                  <li>DesertSocial tilbyr kun gratis sosiale casinospill</li>
                   <li>Det finnes ingen innsats, kjøp eller mulighet for å vinne ekte penger</li>
                   <li>Fremgang i spillene gir ingen fordel i ekte pengespill</li>
                 </ul>
@@ -57,10 +57,10 @@ const ResponsiblePlay = () => {
 
                 <h2>📩 Kontakt oss</h2>
                 <p>Har du spørsmål eller trenger hjelp?</p>
-                <p>MeisterSocial AS</p>
+                <p>DesertSocial AS</p>
                 <p>📧 meister@gmail.com</p>
                 <p>📍 Dronning Eufemias gate 16, 0191 Oslo, Norge</p>
-                <p>�� +47 22 83 70 10</p>
+                <p> +47 22 83 70 10</p>
               </div>
             </Col>
           </Row>

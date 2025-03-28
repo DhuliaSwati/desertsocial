@@ -20,8 +20,8 @@ const PrivacyPolicy = () => {
                   Sist oppdatert: 27. mars 2025
                 </p>
 
-                <p>Hos MeisterSocial tar vi personvernet ditt på alvor. Denne erklæringen forklarer hvordan vi samler inn, bruker og beskytter informasjonen din når du besøker nettstedet vårt.</p>
-                <p>👉 Merk: MeisterSocial er en gratis sosial casinoplattform.</p>
+                <p>Hos DesertSocial tar vi personvernet ditt på alvor. Denne erklæringen forklarer hvordan vi samler inn, bruker og beskytter informasjonen din når du besøker nettstedet vårt.</p>
+                <p>👉 Merk: DesertSocial er en gratis sosial casinoplattform.</p>
                 <p>Vi tilbyr ikke pengespill, ingen kjøp, og det er ingen mulighet for å vinne ekte penger eller premier.</p>
 
                 <h2>🧾 1. Hvilken informasjon samler vi inn?</h2>
@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
                 <p>Vi selger eller deler ikke data med tredjeparter, med mindre det er nødvendig for teknisk drift (f.eks. serverhosting).</p>
 
                 <h2>🎰 4. Ingen pengespill</h2>
-                <p>MeisterSocial er ikke et nettcasino med ekte penger. Spillene våre er:</p>
+                <p>DesertSocial er ikke et nettcasino med ekte penger. Spillene våre er:</p>
                 <ul>
                   <li>🆓 Helt gratis å spille</li>
                   <li>💸 Har ingen mulighet for innskudd eller kjøp</li>
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
 
                 <h2>📬 8. Kontakt</h2>
                 <p>Har du spørsmål angående denne personvernerklæringen eller dine data?</p>
-                <p>MeisterSocial AS</p>
+                <p>DesertSocial AS</p>
                 <p>📧 E-post: meister@gmail.com</p>
                 <p>📍 Dronning Eufemias gate 16, 0191 Oslo, Norge</p>
                 <p>📞 Telefon: +47 22 83 70 10</p>

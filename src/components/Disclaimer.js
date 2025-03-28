@@ -15,7 +15,7 @@ const Disclaimer = () => {
               <h1>⚠️ Ansvarsfraskrivelse</h1>
               <p className="update-date">Sist oppdatert: 27. mars 2025</p>
               <p className="intro-text">
-                Dette nettstedet og dets innhold er levert av MeisterSocial AS som en gratis sosial underholdningstjeneste.
+                Dette nettstedet og dets innhold er levert av DesertSocial AS som en gratis sosial underholdningstjeneste.
               </p>
             </section>
 
@@ -57,7 +57,7 @@ const Disclaimer = () => {
               <h2>📬 Kontakt</h2>
               <p>For spørsmål knyttet til dette ansvarsfraskrivelsen:</p>
               <div className="contact-info">
-                <p className="company-name">MeisterSocial AS</p>
+                <p className="company-name">DesertSocial AS</p>
                 <p>
                   <span>📧</span>{' '}
                   <a href="mailto:meister@gmail.com">meister@gmail.com</a>

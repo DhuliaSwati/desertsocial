@@ -22,11 +22,11 @@ const TermsService = () => {
                   Sist oppdatert: 27. mars 2025
                 </p>
 
-                <p>Velkommen til MeisterSocial. Ved å bruke denne nettsiden og våre spill, godtar du følgende vilkår. Dersom du ikke godtar disse, vennligst ikke bruk tjenesten.</p>
+                <p>Velkommen til DesertSocial. Ved å bruke denne nettsiden og våre spill, godtar du følgende vilkår. Dersom du ikke godtar disse, vennligst ikke bruk tjenesten.</p>
 
                 <h2>🎮 1. Om Tjenesten</h2>
                 <ul>
-                  <li>MeisterSocial tilbyr 100 % gratis sosiale casinospill.</li>
+                  <li>DesertSocial tilbyr 100 % gratis sosiale casinospill.</li>
                   <li>Det er ingen mulighet for å satse, kjøpe eller vinne ekte penger eller fysiske premier.</li>
                   <li>Dette er ikke et nettcasino eller pengespill i henhold til norsk lov.</li>
                   <li>Alle spill er utelukkende utviklet for underholdning, og har ingen økonomisk verdi.</li>
@@ -44,7 +44,7 @@ const TermsService = () => {
                   <li>🛒 Det finnes ingen betalingsløsninger</li>
                   <li>🎁 Du kan ikke vinne ekte penger eller varer</li>
                 </ul>
-                <p>MeisterSocial er helt gratis å bruke, og det finnes ingen funksjoner knyttet til ekte penger i noen del av tjenesten.</p>
+                <p>DesertSocial er helt gratis å bruke, og det finnes ingen funksjoner knyttet til ekte penger i noen del av tjenesten.</p>
 
                 <h2>🧠 4. Ansvarlig Bruk</h2>
                 <p>Vi anbefaler alle brukere å spille ansvarlig og med måte.</p>
@@ -59,7 +59,7 @@ const TermsService = () => {
 
                 <h2>📬 7. Kontakt</h2>
                 <p>Har du spørsmål om disse vilkårene? Kontakt oss:</p>
-                <p>MeisterSocial AS</p>
+                <p>DesertSocial AS</p>
                 <p>📍 Dronning Eufemias gate 16, 0191 Oslo, Norge</p>
                 <p>📧 E-post: meister@gmail.com</p>
                 <p>📞 Telefon: +47 22 83 70 10</p>

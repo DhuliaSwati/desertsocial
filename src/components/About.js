@@ -15,7 +15,7 @@ const About = () => {
             <h1>🙋 Om oss</h1>
             <p className="hero-tagline">Vi gjør spilling gøy, gratis og ansvarlig.</p>
             <div className="hero-description">
-              <p>MeisterSocial er en norsk plattform for sosiale casinospill – laget for deg som elsker spill, men ønsker en trygg og pengeløs opplevelse.</p>
+              <p>DesertSocial er en norsk plattform for sosiale casinospill – laget for deg som elsker spill, men ønsker en trygg og pengeløs opplevelse.</p>
             </div>
           </section>
 
@@ -73,7 +73,7 @@ const About = () => {
             <h2>📍 Vår beliggenhet</h2>
             <div className="contact-card">
               <div className="company-info">
-                <h3>MeisterSocial AS</h3>
+                <h3>DesertSocial AS</h3>
                 <p>Dronning Eufemias gate 16</p>
                 <p>0191 Oslo, Norge</p>
               </div>

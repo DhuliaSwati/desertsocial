@@ -18,7 +18,7 @@ export default function Header({logo}){
                 <Container>
                     <p>
                         <span className="warning-icon">🔞</span>
-                        MeisterSocial er en gratis sosial casinoplattform. Vi samler ikke inn betalinger, innsatser eller økonomisk informasjon, og vi tilbyr ikke pengespill eller muligheten til å vinne ekte penger.
+                        DesertSocial er en gratis sosial casinoplattform. Vi samler ikke inn betalinger, innsatser eller økonomisk informasjon, og vi tilbyr ikke pengespill eller muligheten til å vinne ekte penger.
                     </p>
                 </Container>
             </div>
