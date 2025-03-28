@@ -6,7 +6,6 @@ body {
 
 /* Header css */
 header {
-  padding-block: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +28,7 @@ header {
 
 .linkBtn {
   padding: 10px 20px;
-  background-color: #000;
+  background: linear-gradient(180deg, #FFE78D 0%, #FCA968 40%, #FFC600 100%);
   color: #fff;   
   text-decoration: none;
   border-radius: 25px;
@@ -43,9 +42,9 @@ header {
 /* Hero Section */
 .heroSection{
   position: relative;
-  background-image: url("./assets/background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("./assets/background.png");
   text-align: center;
-  padding: 17vh 0 10px;
+  padding: 17vh 0 7vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +62,7 @@ header {
 
 .subPara{
   margin-bottom: 7vh;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 18px;
@@ -72,7 +71,7 @@ header {
 
 /* second fold */
 .section {
-  background-image: linear-gradient(rgba(20, 20, 20, 0.98), rgba(20, 20, 20, 0.98)), url("./assets/bgImage.png");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url("./assets/bgImage.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -260,10 +259,8 @@ ul li{
 }
 
 header {
-    position: relative;
-    padding: 1rem 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 9vh 0 1rem 0;
+    background: transparent;
 }
 
 .header-logo {

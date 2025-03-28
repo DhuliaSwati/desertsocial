@@ -1,28 +1,24 @@
-// 10.07.2024
 class Lamp
 {
-    constructor (scene, offsetX, offsetY, local, lampOffTexture, lampOnTexture, depth)
+    constructor (scene, offsetX, offsetY)
     {
-        this.lampOffTexture = lampOffTexture;
-        this.lampOnTexture = lampOnTexture;
         this.scene = scene;
-        this.lamp = (local) ? scene.addSpriteLocPos(lampOffTexture, offsetX, offsetY) : scene.add.sprite(offsetX, offsetY, lampOffTexture);      
-        this.lamp.setDepth(depth);
+        this.lamp = scene.addSpriteLocPos('lamp_off', offsetX, offsetY);  
     }
 
     on()
     {
-        this.lamp.setTexture(this.lampOnTexture); 
+        this.lamp.setTexture('lamp_on'); 
     }
 
     off()
     {
-        this.lamp.setTexture(this.lampOffTexture); 
+        this.lamp.setTexture('lamp_off'); 
     }
 
     setOn(lampOn)
     {
-        this.lamp.setTexture(lampOn ? this.lampOnTexture : this.lampOffTexture); 
+        this.lamp.setTexture(lampOn ? 'lamp_on' : 'lamp_off'); 
     }
 }
 
@@ -101,7 +97,7 @@ class LineButton
         this.pressed = false;
     }
     
-    create(offsetX, offsetY, originX, originY, textFont, fontSize)
+    create(offsetX, offsetY, originX, originY)
     { 
         this.offsetX = offsetX;
         this.offsetY = offsetY;
@@ -119,7 +115,8 @@ class LineButton
         this.button.setInteractive();
         this.interactable = true;
         this.pointerDownEvents = [];
-        this.lineText = this.scene.add.bitmapText(this.posX, this.posY, textFont, this.number, fontSize, 1).setOrigin(0.5);
+        this.lineText = this.scene.add.bitmapText(this.posX, this.posY-2, 'gameFont', this.number, 30, 1).setOrigin(0.5);
+        this.lineText.tint = 0x000000;
     }
 
     pointerUp() 
@@ -180,20 +177,16 @@ class SlotSymbol
         this.sprite.setPosition(this.sprite.x, Math.round(this.posY));
         //this.sprite.setVisible(false);
         this.frameRate = frameRate;
-        this.anim_sheet = this.scene.symbolsDict[this.sprite.name].animation;
         // create symbols animation
-        if(this.scene [this.anim_sheet + '_animation'] == null){
-            this.scene [this.anim_sheet + '_animation'] = this.scene.anims.create({
-            key: this.anim_sheet + 'anim',
-            frames: this.scene.anims.generateFrameNumbers(this.anim_sheet),
+        this.symbolAnim = this.scene.anims.create({
+            key: this.sprite.name + 'anim',
+            frames: this.scene.anims.generateFrameNumbers(this.sprite.name + 'Sheet'),
             frameRate: this.frameRate,
             repeat: -1
         });
-        }
        this.anim = null;
        this.blur = false;
        this.posX = this.sprite.x;
-       this.hideWinSymbol = this.scene.symbolsDict[this.sprite.name].hideWinSymbol;
     }
 
     setPositionY(posY)
@@ -214,8 +207,8 @@ class SlotSymbol
         {
             if(this.anim == null)
             {
-                if(this.hideWinSymbol === true) this.sprite.setVisible(false);            
-                this.anim = this.scene.add.sprite(this.sprite.x, this.posY, this.anim_sheet).setOrigin(0.5).play({ key: this.anim_sheet + 'anim'});  // , frameRate : this.frameRate
+                this.sprite.setVisible(false);            
+                this.anim = this.scene.add.sprite(this.sprite.x, this.posY, this.sprite.name + 'Sheet').setOrigin(0.5).play({ key: this.sprite.name + 'anim'});  // , frameRate : this.frameRate
                 this.anim.depth = 10;
             }
         }
@@ -919,7 +912,6 @@ class WinController
                 if (sPL.scattersCount > 0 && sPL.scattersCount == this.scatterWinSymbols.length)
                 {
                     this.scatterWin = new WinData(this.scatterWinSymbols, sPL.freeSpins, sPL.pay);
-                    this.scatterWin.winEventString = sPL.winEventString;           
                 }
             });
             if (this.scatterWin == null) this.scatterWinSymbols = [];
@@ -1254,14 +1246,14 @@ class SlotPlayer{
         if (changed) 
         {
             this.changeCoinsEvents.forEach((eW)=>{ if (eW!=null && eW.action!=null) eW.action.call(eW.context, this.coins); });
-           // localStorage.setItem('mk_donuts_bl_amount', this.coins); // save coins
+           // localStorage.setItem('mk_arabic_bl_amount', this.coins); // save coins
         }
     }
 
     loadCoins()
     {
         var amount = this.defaultCoins;
-       // amount = parseInt(localStorage.getItem('mk_donuts_bl_amount')) || this.defaultCoins; // load https://www.dynetisgames.com/2018/10/28/how-save-load-player-progress-localstorage/
+       // amount = parseInt(localStorage.getItem('mk_arabic_bl_amount')) || this.defaultCoins; // load https://www.dynetisgames.com/2018/10/28/how-save-load-player-progress-localstorage/
         this.setCoinsCount(amount);
     }
 
@@ -1377,7 +1369,6 @@ class SlotControls
         this.defaultLineBet = 1;
         this.autoPlayFreeSpins = true;
         this.jackpotDefaultAmount = jackpotDefaultAmount;
-        this.spinTextString = 'Spin';
 
         // slot input parameters
         this.lineBet = 1;
@@ -1751,7 +1742,7 @@ class SlotControls
         if (changed) 
         {
             this.changeJackpotEvent.events.forEach((eW)=>{ if (eW != null && eW.action != null) eW.action.call(eW.context, this.jackpotAmount);});
-          //  localStorage.setItem('mk_donuts_jp_amount', this.jackpotAmount); // save https://www.dynetisgames.com/2018/10/28/how-save-load-player-progress-localstorage/
+          //  localStorage.setItem('mk_arabic_jp_amount', this.jackpotAmount); // save https://www.dynetisgames.com/2018/10/28/how-save-load-player-progress-localstorage/
         }
     }
 
@@ -1763,7 +1754,7 @@ class SlotControls
     loadJackpot()
     {
         var amount = this.jackpotDefaultAmount;
-      //  amount = parseInt(localStorage.getItem('mk_donuts_jp_amount')) || this.jackpotDefaultAmount; // load https://www.dynetisgames.com/2018/10/28/how-save-load-player-progress-localstorage/
+      //  amount = parseInt(localStorage.getItem('mk_arabic_jp_amount')) || this.jackpotDefaultAmount; // load https://www.dynetisgames.com/2018/10/28/how-save-load-player-progress-localstorage/
         this.setJackpotAmount(amount);
     }
 
@@ -1855,12 +1846,12 @@ class HoldFeature{
   
         if (this.scene.slotControls.holdMultiplierTextL != null)
         {          
-            this.scene.slotControls.holdMultiplierTextL.text = 'x ' + this.getMultiplier();
+            this.scene.slotControls.holdMultiplierTextL.text = this.getMultiplier();
         }
         
         if (this.scene.slotControls.holdMultiplierTextR != null)
         {          
-            this.scene.slotControls.holdMultiplierTextR.text = 'x ' + this.getMultiplier();
+            this.scene.slotControls.holdMultiplierTextR.text = this.getMultiplier();
         }
 
         this.changeBetMultiplierEvent.invoke();

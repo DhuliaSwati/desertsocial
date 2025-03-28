@@ -1,5 +1,4 @@
 // 21.11.2022
-// 10.07.2024
 
 // ---simple tweens---
 class SimpleTweener
@@ -628,7 +627,6 @@ class GuiController
                 this.popups.splice(i, 1);
             }
         }
-        popUp.closeEvent.invoke();
         popUp.wCont.destroy();
         // console.log('this.popups.length after close: ' + this.popups.length)
     }
@@ -652,7 +650,6 @@ class PopUpController
         this.scene = scene;
         this.guiController = guiController;
         this.createEvent = null;
-        this.closeEvent = new MKEvent();
         this.buttons = [];
     }
 
