@@ -42,7 +42,7 @@ header {
 /* Hero Section */
 .heroSection{
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("./assets/background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("./assets/background.png");
   text-align: center;
   padding: 17vh 0 7vh;
   background-size: cover;
@@ -71,7 +71,7 @@ header {
 
 /* second fold */
 .section {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url("./assets/bgImage.png");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("./assets/bgImage.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
