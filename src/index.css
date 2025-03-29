@@ -60,6 +60,10 @@ header {
   text-transform: uppercase;
 }
 
+.subHeading{
+  color: #fff
+}
+
 .subPara{
   margin-bottom: 7vh;
   color: #fff;

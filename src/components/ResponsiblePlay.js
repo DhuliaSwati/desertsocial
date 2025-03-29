@@ -17,50 +17,51 @@ const ResponsiblePlay = () => {
               <div className="terms-content mt-4 mb-5 p-4">
                 <h1 className="text-center mb-4">🎯 Ansvarlig spilling</h1>
                 <p className="version-info text-center mb-4">
-                  Sist oppdatert: 27. mars 2025
+                  Sist oppdatert: 29. mars 2025
                 </p>
 
-                <p>Hos DesertSocial er vi opptatt av at spilling skal være morsomt, trygt og sunt. Vi tilbyr kun sosiale casinospill som er gratis å spille, og som ikke involverer ekte penger.</p>
+                <p>Hos DesertSocial ønsker vi at spilling skal være gøy, trygt og balansert.</p>
+                <p>Vi tilbyr kun sosiale casinospill – helt gratis og uten noen form for pengebruk.</p>
 
                 <h2>💡 Hva betyr ansvarlig spilling?</h2>
-                <p>Ansvarlig spilling handler om å spille for underholdning – uten at det går utover hverdagen din, økonomien eller forholdene dine.</p>
-                <p>Selv om spillene våre ikke er pengespill, er det fortsatt viktig å ha gode spillevaner.</p>
+                <p>Ansvarlig spilling handler om å bruke spill som en form for underholdning – ikke som en måte å håndtere problemer eller stress på.</p>
+                <p>Selv om våre spill ikke involverer ekte penger, er det fortsatt viktig å ha sunne spillevaner.</p>
 
-                <h2>✅ Våre prinsipper for ansvarlig spilling:</h2>
+                <h2>✅ Våre prinsipper for ansvarlig spilling</h2>
                 <ul>
-                  <li>🎮 Spill for moro – ikke som en måte å løse problemer på</li>
-                  <li>🧘 Ta pauser – ikke spill over lengre perioder uten avbrekk</li>
-                  <li>⏰ Sett tidsgrenser – og hold deg til dem</li>
-                  <li>👀 Vær bevisst – kjenn igjen tegn på avhengighet eller tvang</li>
-                  <li>🔞 Plattformen er kun for brukere over 18 år</li>
+                  <li>🎮 Spill for moro skyld – ikke som en løsning på problemer</li>
+                  <li>🧘‍♀️ Ta pauser – unngå lange spilløkter uten avbrekk</li>
+                  <li>⏰ Sett grenser for tid og spill – og hold deg til dem</li>
+                  <li>👀 Vær oppmerksom – kjenn igjen tegn på tvang eller avhengighet</li>
+                  <li>🔞 Plattformen er kun for personer over 18 år</li>
                 </ul>
 
-                <h2>⚠️ Er du bekymret for ditt eget eller andres spillmønster?</h2>
-                <p>Hvis du føler at spilling tar overhånd – selv med gratisspill – anbefaler vi at du snakker med noen.</p>
-                <p>👉 Hjelpelinjen.no tilbyr gratis og anonym rådgivning for alle i Norge:</p>
-                <p>🔗 <a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">www.hjelpelinjen.no</a></p>
-                <p>📞 800 800 40 (døgnåpent)</p>
+                <h2>⚠️ Bekymret for egne eller andres spillvaner?</h2>
+                <p>Selv om DesertSocial kun tilbyr gratisspill, kan det være nyttig å prate med noen dersom spillingen føles overdreven eller ukontrollert.</p>
+                <p>👉 Vi anbefaler Hjelpelinjen.no – en gratis, anonym og døgnåpen hjelpetjeneste i Norge.</p>
+                <p>📞 800 800 40</p>
 
-                <h2>🔒 Spill trygt på DesertSocial</h2>
+                <h2>🔒 Spill trygt hos DesertSocial</h2>
                 <ul>
-                  <li>DesertSocial tilbyr kun gratis sosiale casinospill</li>
-                  <li>Det finnes ingen innsats, kjøp eller mulighet for å vinne ekte penger</li>
-                  <li>Fremgang i spillene gir ingen fordel i ekte pengespill</li>
+                  <li>Våre spill er 100 % gratis</li>
+                  <li>Det er ingen innskudd, kjøp eller gevinster i ekte penger</li>
+                  <li>Spillfremgang gir ingen fordeler i pengespill</li>
+                  <li>Alt innhold er kun ment for underholdning</li>
                 </ul>
 
-                <h2>🧠 Trenger du tips?</h2>
+                <h2>🧠 Tips til god spillopplevelse</h2>
                 <ul>
-                  <li>Spill med venner – gjør det sosialt</li>
-                  <li>Sett opp egne grenser: for tid og frekvens</li>
-                  <li>Husk: Dette er bare et spill, ikke en konkurranse om å vinne</li>
+                  <li>Spill sammen med venner – gjør det sosialt og hyggelig</li>
+                  <li>Sett dine egne grenser for tid og hyppighet</li>
+                  <li>Husk: Dette er et spill – ikke en konkurranse om å vinne</li>
                 </ul>
 
                 <h2>📩 Kontakt oss</h2>
-                <p>Har du spørsmål eller trenger hjelp?</p>
+                <p>Har du spørsmål eller trenger råd?</p>
                 <p>DesertSocial AS</p>
-                <p>📧 meister@gmail.com</p>
-                <p>📍 Dronning Eufemias gate 16, 0191 Oslo, Norge</p>
-                <p> +47 22 83 70 10</p>
+                <p>📍 Hovfaret 4, 0275 Oslo, Norge</p>
+                <p>📧 E-post: desertsocial@gmail.com</p>
+                <p>📞 Telefon: +47 22 44 80 80</p>
               </div>
             </Col>
           </Row>

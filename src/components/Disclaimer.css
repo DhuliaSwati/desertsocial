@@ -1,56 +1,59 @@
 .disclaimer-page {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, #2C0337 0%, #411052 50%, #2C0337 100%);
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 12vh 0 20px 0;
   color: white;
 }
 
 .disclaimer-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .disclaimer-content {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 40px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .disclaimer-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .disclaimer-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #ffcc00;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #FFE78D;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .update-date {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
 .intro-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
 .disclaimer-section {
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 30px;
+  border-radius: 20px;
+  padding: 35px;
   margin-bottom: 30px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .disclaimer-section:hover {
@@ -59,115 +62,120 @@
 }
 
 .disclaimer-section h2 {
-  color: #ffcc00;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #FFE78D;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.disclaimer-section ul {
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+}
+
+.legal-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
 }
 
-.disclaimer-section li {
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.9);
+.legal-list li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
 }
 
-.disclaimer-section li span {
+.legal-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #FFE78D;
   font-size: 1.2rem;
 }
 
-.gaming-section ul {
-  display: grid;
-  gap: 15px;
-}
-
-.legal-section ul {
-  margin-left: 20px;
-  list-style-type: disc;
-  margin-bottom: 20px;
-}
-
 .emphasis {
-  color: #ffcc00;
+  color: #FFE78D;
   font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.help-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 25px;
   margin-top: 20px;
+  text-align: center;
 }
 
-.responsible-section a {
-  color: #ffcc00;
+.help-box a {
+  color: #FFE78D;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.responsible-section a:hover {
-  color: #ffd700;
-  text-decoration: underline;
-}
-
-.contact-info {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 15px;
-}
-
-.company-name {
   font-weight: 600;
-  color: #ffcc00;
-  margin-bottom: 10px;
-}
-
-.contact-info p {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-info a {
-  color: #ffcc00;
-  text-decoration: none;
   transition: color 0.3s ease;
+  display: block;
+  margin-top: 10px;
 }
 
-.contact-info a:hover {
-  color: #ffd700;
+.help-box a:hover {
+  color: #FFC600;
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
+  .disclaimer-page {
+    padding: 40px 15px;
+  }
+
   .disclaimer-content {
     padding: 30px 20px;
   }
 
   .disclaimer-header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
   }
 
   .disclaimer-section {
-    padding: 20px;
+    padding: 25px;
   }
 }
 
 @media (max-width: 480px) {
-  .disclaimer-page {
-    padding: 20px 10px;
-  }
-
   .disclaimer-header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .intro-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .disclaimer-section h2 {
+    font-size: 1.5rem;
   }
 }

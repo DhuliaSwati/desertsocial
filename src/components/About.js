@@ -43,26 +43,20 @@ const About = () => {
             <h2>🎯 Hva vi står for</h2>
             <div className="values-grid">
               <div className="value-card">
-                <div className="value-header">
-                  <span className="value-icon">🎮</span>
-                  <h3>Spill uten press</h3>
-                </div>
+                <span className="value-icon">🎮</span>
+                <h3>Spill uten press</h3>
                 <p>Vi tror at spilling skal være morsomt – ikke knyttet til risiko, tap eller pengebruk.</p>
               </div>
 
               <div className="value-card">
-                <div className="value-header">
-                  <span className="value-icon">🔞</span>
-                  <h3>For voksne (18+)</h3>
-                </div>
+                <span className="value-icon">🔞</span>
+                <h3>For voksne (18+)</h3>
                 <p>Plattformen er kun ment for voksne. Vi promoterer ansvarlig bruk og har ingen elementer av pengespill.</p>
               </div>
 
               <div className="value-card">
-                <div className="value-header">
-                  <span className="value-icon">🛡️</span>
-                  <h3>Trygghet og åpenhet</h3>
-                </div>
+                <span className="value-icon">🛡️</span>
+                <h3>Trygghet og åpenhet</h3>
                 <p>Vi samler ikke inn personlig betalingsinformasjon. All data som behandles er anonym og i tråd med GDPR og norsk lovgivning.</p>
               </div>
             </div>
@@ -71,15 +65,32 @@ const About = () => {
           {/* Contact Section */}
           <section className="contact-section">
             <h2>📍 Vår beliggenhet</h2>
-            <div className="contact-card">
-              <div className="company-info">
-                <h3>DesertSocial AS</h3>
-                <p>Dronning Eufemias gate 16</p>
-                <p>0191 Oslo, Norge</p>
+            <div className="contact-grid">
+              <div className="contact-info">
+                <div className="company-details">
+                  <h3>DesertSocial AS</h3>
+                  <p>Hovfaret 4</p>
+                  <p>0275 Oslo, Norge</p>
+                </div>
+                <div className="contact-methods">
+                  <div className="contact-item">
+                    <span className="contact-icon">📧</span>
+                    <div>
+                      <h4>E-post:</h4>
+                      <a href="mailto:desertsocial@gmail.com">desertsocial@gmail.com</a>
+                    </div>
+                  </div>
+                  <div className="contact-item">
+                    <span className="contact-icon">📞</span>
+                    <div>
+                      <h4>Telefon:</h4>
+                      <a href="tel:+4722448080">+47 22 44 80 80</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="contact-details">
-                <p><span>📧</span> E-post: <a href="mailto:meister@gmail.com">meister@gmail.com</a></p>
-                <p><span>📞</span> Telefon: <a href="tel:+4722837010">+47 22 83 70 10</a></p>
+              <div className="contact-logo">
+                <img src={logo} alt="DesertSocial Logo" />
               </div>
             </div>
           </section>

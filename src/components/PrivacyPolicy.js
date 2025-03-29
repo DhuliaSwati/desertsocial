@@ -17,73 +17,72 @@ const PrivacyPolicy = () => {
               <div className="terms-content mt-4 mb-5 p-4">
                 <h1 className="text-center mb-4">🔐 Personvernerklæring</h1>
                 <p className="version-info text-center mb-4">
-                  Sist oppdatert: 27. mars 2025
+                  Sist oppdatert: 29. mars 2025
                 </p>
 
-                <p>Hos DesertSocial tar vi personvernet ditt på alvor. Denne erklæringen forklarer hvordan vi samler inn, bruker og beskytter informasjonen din når du besøker nettstedet vårt.</p>
-                <p>👉 Merk: DesertSocial er en gratis sosial casinoplattform.</p>
-                <p>Vi tilbyr ikke pengespill, ingen kjøp, og det er ingen mulighet for å vinne ekte penger eller premier.</p>
+                <p>Hos DesertSocial tar vi personvernet ditt på alvor. Denne erklæringen forklarer hvordan vi samler inn, bruker og beskytter informasjon når du besøker nettstedet vårt og bruker våre tjenester.</p>
+                <p>💡 Merk: DesertSocial er en gratis sosial casinoplattform uten pengespill eller kjøpsmuligheter.</p>
 
                 <h2>🧾 1. Hvilken informasjon samler vi inn?</h2>
-                <p>Vi samler kun inn anonym bruksdata for å forbedre brukeropplevelsen. Dette kan inkludere:</p>
+                <p>Vi samler kun inn anonym, ikke-personlig informasjon med formål om å forbedre tjenesten. Dette inkluderer:</p>
                 <ul>
                   <li>🌐 Nettlesertype og enhet</li>
-                  <li>🕒 Tid og varighet for besøk</li>
-                  <li>📄 Hvilke sider som ble besøkt</li>
-                  <li>📍 Omtrentlig plassering (basert på IP-adresse)</li>
+                  <li>🕒 Besøkets lengde og tidspunkt</li>
+                  <li>📄 Hvilke sider som er besøkt</li>
+                  <li>📍 Omtrentlig geografisk plassering (basert på IP-adresse)</li>
                 </ul>
-                <p>Vi samler ikke inn personlig identifiserbar informasjon, som navn, adresse eller betalingsopplysninger.</p>
-                <p>Vi behandler heller ingen finansielle data, siden tjenesten ikke involverer ekte penger.</p>
+                <p>❌ Vi samler ikke inn navn, e-post, adresse, betalingsdata eller annen personlig informasjon.</p>
+                <p>💳 Tjenesten involverer ikke økonomiske transaksjoner eller betalingsinformasjon.</p>
 
-                <h2>🍪 2. Bruk av informasjonskapsler (cookies)</h2>
-                <p>Vi bruker informasjonskapsler for å:</p>
+                <h2>🍪 2. Informasjonskapsler (Cookies)</h2>
+                <p>Vi bruker cookies for å:</p>
                 <ul>
-                  <li>Forstå hvordan besøkende bruker nettstedet</li>
+                  <li>Forstå hvordan nettstedet brukes</li>
                   <li>Forbedre funksjonalitet og brukeropplevelse</li>
-                  <li>Måle trafikk og ytelse</li>
+                  <li>Analysere trafikk og teknisk ytelse</li>
                 </ul>
-                <p>Du kan selv kontrollere eller slette cookies i nettleserinnstillingene dine.</p>
+                <p>Du kan når som helst slå av eller slette cookies i nettleserens innstillinger.</p>
 
                 <h2>🧠 3. Hvordan bruker vi data?</h2>
-                <p>Dataene brukes kun til:</p>
+                <p>All innsamlet data brukes kun til:</p>
                 <ul>
-                  <li>📊 Statistikk og analyse (f.eks. Google Analytics)</li>
-                  <li>🔧 Teknisk forbedring av nettstedet</li>
-                  <li>🛡️ Beskyttelse mot misbruk og sikkerhetsbrudd</li>
+                  <li>📊 Statistikk og anonym analyse (f.eks. via Google Analytics)</li>
+                  <li>🔧 Teknisk forbedring av nettstedets ytelse og stabilitet</li>
+                  <li>🛡️ Beskyttelse mot misbruk og sikkerhetstrusler</li>
                 </ul>
-                <p>Vi selger eller deler ikke data med tredjeparter, med mindre det er nødvendig for teknisk drift (f.eks. serverhosting).</p>
+                <p>🔒 Vi deler ikke data med tredjeparter, med unntak av nødvendige tekniske leverandører (som hosting).</p>
 
                 <h2>🎰 4. Ingen pengespill</h2>
-                <p>DesertSocial er ikke et nettcasino med ekte penger. Spillene våre er:</p>
+                <p>DesertSocial tilbyr kun gratis spillopplevelser.</p>
                 <ul>
-                  <li>🆓 Helt gratis å spille</li>
-                  <li>💸 Har ingen mulighet for innskudd eller kjøp</li>
-                  <li>❌ Tilbyr ikke gevinster i ekte penger eller fysiske premier</li>
+                  <li>🆓 Spillene er helt kostnadsfrie</li>
+                  <li>💸 Det finnes ingen kjøps- eller innsatsfunksjoner</li>
+                  <li>🎁 Ingen premier eller gevinster i ekte penger</li>
                 </ul>
-                <p>Tjenesten er kun ment for underholdning og sosial moro.</p>
+                <p>Alt innhold er utviklet for underholdning og sosialt samvær, uten økonomisk risiko.</p>
 
-                <h2>🧑‍⚖️ 5. Dine rettigheter</h2>
-                <p>I henhold til personvernforordningen (GDPR) har du rett til:</p>
+                <h2>🧑‍⚖️ 5. Dine rettigheter (GDPR)</h2>
+                <p>I tråd med EUs personvernforordning (GDPR) har du rett til å:</p>
                 <ul>
-                  <li>📝 Innsyn i hvilke data vi har</li>
-                  <li>✏️ Rette feilaktig informasjon</li>
-                  <li>❌ Be om sletting av dine data ("retten til å bli glemt")</li>
-                  <li>🛑 Begrense eller motsette deg visse former for databruk</li>
+                  <li>📝 Få innsyn i hvilke data vi har om deg</li>
+                  <li>✏️ Be om retting av eventuelle feil</li>
+                  <li>❌ Be om sletting av data ("retten til å bli glemt")</li>
+                  <li>🛑 Motsette deg visse former for databehandling</li>
                 </ul>
-                <p>For å utøve disse rettighetene, kontakt oss på meister@gmail.com.</p>
+                <p>For å bruke dine rettigheter, kontakt oss via e-post.</p>
 
                 <h2>🧷 6. Datasikkerhet</h2>
-                <p>Vi benytter moderne sikkerhetstiltak for å beskytte informasjon mot uautorisert tilgang, endringer eller tap.</p>
+                <p>Vi benytter oppdaterte sikkerhetstiltak og bransjestandarder for å hindre uautorisert tilgang, endring eller tap av informasjon.</p>
 
                 <h2>🌍 7. Lagring og behandling i EØS</h2>
-                <p>All databehandling skjer i henhold til EUs personvernforordning (GDPR), og data lagres innenfor EØS-området.</p>
+                <p>All databehandling skjer innenfor EØS og følger kravene i GDPR.</p>
 
                 <h2>📬 8. Kontakt</h2>
-                <p>Har du spørsmål angående denne personvernerklæringen eller dine data?</p>
+                <p>Har du spørsmål om personvernet vårt eller ønsker å utøve dine rettigheter?</p>
                 <p>DesertSocial AS</p>
-                <p>📧 E-post: meister@gmail.com</p>
-                <p>📍 Dronning Eufemias gate 16, 0191 Oslo, Norge</p>
-                <p>📞 Telefon: +47 22 83 70 10</p>
+                <p>📍 Hovfaret 4, 0275 Oslo, Norge</p>
+                <p>📧 E-post: desertsocial@gmail.com</p>
+                <p>📞 Telefon: +47 22 44 80 80</p>
               </div>
             </Col>
           </Row>

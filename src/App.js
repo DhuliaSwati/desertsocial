@@ -12,14 +12,12 @@ import img5 from "./assets/img5.png";
 import logo from "./assets/Logo.png";
 import AgeVerificationPopup from "./components/AgeVerificationPopup";
 
-
 function App() {
   const [showPopup, setShowPopup] = useState(true);
   const [showDenied, setShowDenied] = useState(false);
   const [verified, setVerified] = useState(false);
 
   useEffect(() => {
-    // Check if user has already verified
     const isVerified = localStorage.getItem('ageVerified');
     if (isVerified === 'true') {
       setVerified(true);
@@ -52,36 +50,39 @@ function App() {
           <Header logo={logo}/>
           {/* Hero Section */}
           <div className="heroSection">
-          <Container>
-          <Row>
-            <Col className="outerSection">
-              <h1 className="h1Heading">#1 SOSIALT CASINO</h1>
-              <p className="subPara">Klar for å spille – helt gratis og bare for moro skyld!</p>
-              <Link to="/spill" className="linkBtn">Spill nå</Link>
-            </Col>
-          </Row>
-          </Container>
+            <Container>
+              <Row>
+                <Col className="outerSection">
+                  <h1 className="h1Heading">VELKOMMEN TIL DESERTSOCIAL</h1>
+                  <h2 className="subHeading">GRATIS SOSIALT CASINO – BARE FOR MORO!</h2>
+                  <p className="subPara">Spill casinospill uten penger, press eller risiko.</p>
+                  <Link to="/spill" className="linkBtn">Spill Nå</Link>
+                </Col>
+              </Row>
+            </Container>
           </div>
-          {/* Second fold */}
+
+          {/* Second Section */}
           <div className="section">
             <div className="outerSection">
               <div className="sectionHead">
                 <img src={star} alt="stjerne" />
-                <h2 className="h2Heading"> TOPP <span className="text-yellow">GRATIS-Å-SPILLE </span>CASINO-STIL SPILL</h2>
+                <h2 className="h2Heading">DesertSocial – Bare moro, ingen penger involvert</h2>
                 <img src={star} alt="stjerne" />
               </div>
-              <p className="subPara">Ingen ekte penger. Ingen risiko. Bare underholdning.</p>
+              <p className="subPara">✨ 100 % gratis. Ingen risiko. Ren underholdning.</p>
               <div className="imagesSection">
                 <img src={img1} alt="Spill1" />
               </div>
-              <Link to="/spill" className="sectionBtn">Spill gratis, ingen ekte penger nødvendig</Link>
+              <Link to="/spill" className="sectionBtn">Spill nå – ingen ekte penger nødvendig!</Link>
             </div>
-          {/* Third Fold */}
+
+            {/* Third Section */}
             <div className="outerSection">
-            <h2 className="h2Heading">DET ER ALLTID GRATIS Å SPILLE</h2>
-            <p className="subPara">Ingen kjøp, ingen innsatser – kun sosial moro!</p>
-                <img src={img5} alt="Finn ut mer" />
-              <Link to="/spill" className="sectionBtn">Spill gratis, ingen ekte penger nødvendig</Link>
+              <h2 className="h2Heading">DesertSocial – Norges morsomste gratis casinoopplevelse</h2>
+              <p className="subPara">Ingen penger. Ingen risiko. Bare moro.</p>
+              <img src={img5} alt="Finn ut mer" />
+              <Link to="/spill" className="sectionBtn">Spill nå – helt gratis, ingen ekte penger nødvendig!</Link>
             </div>
           </div>
           <Footer />

@@ -1,7 +1,7 @@
 .about-page {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #2C0337 0%, #411052 50%, #2C0337 100%);
     min-height: 100vh;
-    padding: 40px 20px;
+    padding: 12vh 0 20px 0;
     color: white;
   }
   
@@ -13,25 +13,26 @@
   /* Hero Section */
   .about-hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 40px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    border-radius: 24px;
+    margin-bottom: 50px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   }
   
   .about-hero h1 {
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    color: #FFE78D;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .hero-tagline {
-    font-size: 1.5rem;
-    color: #ffcc00;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 25px;
     font-weight: 600;
   }
   
@@ -40,68 +41,73 @@
     margin: 0 auto;
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
+    line-height: 1.8;
   }
   
   /* Features Section */
   .features-section {
-    padding: 40px;
+    padding: 50px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    border-radius: 24px;
+    margin-bottom: 50px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   .features-section h2 {
     text-align: center;
-    color: white;
+    color: #FFE78D;
     margin-bottom: 40px;
+    font-size: 2rem;
   }
   
   .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
   }
   
   .feature-card {
     text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, #b83dba 0%, #8a2baa 100%);
-    border-radius: 15px;
-    color: white;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(184, 61, 186, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(184, 61, 186, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   }
   
   .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
     display: block;
+  }
+  
+  .feature-card h3 {
+    color: white;
+    font-size: 1.3rem;
   }
   
   /* Values Section */
   .values-section {
-    padding: 40px;
+    padding: 50px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    border-radius: 24px;
+    margin-bottom: 50px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   .values-section h2 {
     text-align: center;
-    color: white;
+    color: #FFE78D;
     margin-bottom: 40px;
+    font-size: 2rem;
   }
   
   .values-grid {
@@ -111,9 +117,9 @@
   }
   
   .value-card {
-    padding: 30px;
+    padding: 35px;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
+    border-radius: 20px;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -121,99 +127,134 @@
   .value-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .value-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   }
   
   .value-icon {
-    font-size: 2rem;
-    margin-right: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: block;
   }
   
   .value-card h3 {
-    color: white;
-    margin: 0;
+    color: #FFE78D;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
   }
   
   .value-card p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
   }
   
   /* Contact Section */
   .contact-section {
-    padding: 40px;
+    padding: 50px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   .contact-section h2 {
     text-align: center;
-    color: white;
+    color: #FFE78D;
     margin-bottom: 40px;
+    font-size: 2rem;
   }
   
-  .contact-card {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
+  .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .contact-info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 35px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .company-info h3 {
-    color: white;
-    margin-bottom: 15px;
+  .company-details {
+    margin-bottom: 30px;
   }
   
-  .company-info p {
-    color: rgba(255, 255, 255, 0.8);
+  .company-details h3 {
+    color: #FFE78D;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .company-details p {
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
   }
   
-  .contact-details p {
+  .contact-methods {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .contact-item {
     display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    color: rgba(255, 255, 255, 0.8);
+    align-items: flex-start;
+    gap: 15px;
   }
   
-  .contact-details span {
-    margin-right: 10px;
-    font-size: 1.2rem;
+  .contact-icon {
+    font-size: 1.5rem;
   }
   
-  .contact-details a {
-    color: #ffcc00;
+  .contact-item h4 {
+    color: #FFE78D;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-item a {
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
   }
   
-  .contact-details a:hover {
-    color: #ffd700;
-    text-decoration: underline;
+  .contact-item a:hover {
+    color: #FFE78D;
+  }
+  
+  .contact-logo img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-hero h1 {
-      font-size: 2.5rem;
+  @media (max-width: 968px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
     }
   
-    .contact-card {
-      grid-template-columns: 1fr;
+    .contact-logo {
+      text-align: center;
+    }
+  
+    .contact-logo img {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 40px 20px;
+    }
+  
+    .about-hero h1 {
+      font-size: 2.8rem;
+    }
+  
+    .hero-tagline {
+      font-size: 1.5rem;
     }
   
     .features-section,
@@ -225,7 +266,7 @@
   
   @media (max-width: 480px) {
     .about-hero h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   
     .hero-tagline {
@@ -233,6 +274,6 @@
     }
   
     .about-page {
-      padding: 20px 10px;
+      padding: 30px 15px;
     }
   }

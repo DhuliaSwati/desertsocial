@@ -1,157 +1,81 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ContactForm.css';
 import Header from "./Header";
 import Footer from "./Footer";
 import logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setSubmitMessage({
-        type: 'success',
-        text: 'Meldingen er sendt! Vi vil svare deg snart.'
-      });
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
-      setSubmitMessage({
-        type: 'error',
-        text: 'Beklager! Noe gikk galt. Vennligst prøv igjen.'
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <>
       <Header logo={logo} />
       <div className="contact-page">
         <div className="contact-container">
-          <section className="contact-intro">
-            <h1>📬 Kontakt Oss</h1>
-            <p>Har du spørsmål, tilbakemeldinger eller trenger hjelp?</p>
-            <p>Vi hos DesertSocial ønsker å høre fra deg!</p>
-            <p>Enten det gjelder ansvarlig spilling, personvern, tekniske problemer eller samarbeid – vi er her for å hjelpe. 🙌</p>
+          {/* Play Now Section */}
+          <section className="play-now-section">
+            <h1>🎮 Spill nå</h1>
+            <p>Klar for å kose deg med gratis og sosiale casinospill?</p>
+            <p>Trykk på "Spill nå" og bli med!</p>
+            <Link to="/spill" className="play-now-button">Spill nå</Link>
           </section>
 
-          <div className="contact-grid">
-            <section className="contact-info">
-              <div className="info-card">
-                <h2>🧾 Generell Kontakt</h2>
-                <ul>
-                  <li><span>📧</span> <strong>E-post:</strong> meister@gmail.com</li>
-                  <li><span>📞</span> <strong>Telefon:</strong> +47 22 83 70 10</li>
-                  <li>
-                    <span>📍</span> <strong>Adresse:</strong><br />
-                    DesertSocial AS<br />
-                    Dronning Eufemias gate 16<br />
-                    0191 Oslo, Norge
-                  </li>
-                  <li>
-                    <span>🕒</span> <strong>Åpningstider:</strong><br />
-                    Mandag–Fredag: 09:00–17:00<br />
-                    Lørdag–Søndag: Stengt
-                  </li>
-                </ul>
-              </div>
+          {/* Contact Intro Section */}
+          <section className="contact-intro">
+            <h2>📬 Kontakt oss</h2>
+            <p>Har du spørsmål, tilbakemeldinger eller trenger hjelp?</p>
+            <p>Vi hos DesertSocial setter pris på å høre fra deg!</p>
+            <p>Uansett om det gjelder tekniske problemer, ansvarlig spilling, personvern, forslag eller samarbeid – vi er her for deg. 🙌</p>
+          </section>
 
-              <div className="info-card important-info">
-                <h2>💡 Viktig å vite</h2>
-                <p>DesertSocial tilbyr kun gratis sosiale casinospill for underholdning.</p>
-                <p>Det finnes ingen pengespill, ingen kjøp, og ingen gevinster i ekte penger på denne plattformen.</p>
-                <p>For spørsmål knyttet til ansvarlig spilling, anbefaler vi <a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">www.hjelpelinjen.no</a>.</p>
-              </div>
+          <div className="info-grid">
+            {/* General Contact */}
+            <div className="info-card">
+              <h3>🧾 Generell kontakt</h3>
+              <ul>
+                <li><span>📧</span> E-post: desertsocial@gmail.com</li>
+                <li><span>📞</span> Telefon: +47 22 44 80 80</li>
+                <li>
+                  <span>📍</span> Adresse:<br />
+                  DesertSocial AS<br />
+                  Hovfaret 4, 0275 Oslo, Norge
+                </li>
+                <li>
+                  <span>🕒</span> Åpningstider:<br />
+                  Mandag–Fredag: 09:00–17:00<br />
+                  Lørdag–Søndag: Stengt
+                </li>
+              </ul>
+            </div>
 
-              <div className="info-card privacy-info">
-                <h2>🛡️ Personvern</h2>
-                <p>Lurer du på hvordan vi håndterer dine data?</p>
-                <p>Les vår <a href="/personvernregler">Personvernerklæring</a> og <a href="/tjenestevilkår">Vilkår for bruk</a> for full informasjon.</p>
-              </div>
-            </section>
+            {/* Important Information */}
+            <div className="info-card">
+              <h3>💡 Viktig informasjon</h3>
+              <p>DesertSocial tilbyr kun gratis sosiale casinospill for underholdning.</p>
+              <ul className="bullet-list">
+                <li>Ingen pengespill</li>
+                <li>Ingen innskudd eller kjøp</li>
+                <li>Ingen gevinster i ekte penger</li>
+              </ul>
+            </div>
 
-            <section className="contact-form-section">
-              <h2>✍️ Send oss en melding</h2>
-              {submitMessage && (
-                <div className={`message ${submitMessage.type}`}>
-                  {submitMessage.text}
-                </div>
-              )}
-              
-              <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Ditt Navn"
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="Din E-postadresse"
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    placeholder="Emne"
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    placeholder="Din Melding"
-                    rows="5"
-                  ></textarea>
-                </div>
-                
-                <button 
-                  type="submit" 
-                  className="submit-button"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Sender...' : 'Send Melding'}
-                </button>
-              </form>
-            </section>
+            {/* Privacy */}
+            <div className="info-card">
+              <h3>🛡️ Personvern</h3>
+              <p>Lurer du på hvordan vi håndterer dine data?</p>
+              <p>Vi anbefaler at du leser vår:</p>
+              <ul className="link-list">
+                <li><Link to="/personvernregler">Personvernerklæring</Link></li>
+                <li><Link to="/tjenestevilkar">Vilkår for bruk</Link></li>
+              </ul>
+            </div>
+
+            {/* Responsible Gaming */}
+            <div className="info-card">
+              <h3>🧠 Trenger du hjelp med spillevaner?</h3>
+              <p>Vi tar ansvarlig spilling på alvor. Dersom du eller noen du kjenner trenger noen å snakke med, ta kontakt med:</p>
+              <p><a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">🔗 www.hjelpelinjen.no</a></p>
+              <p>📞 800 800 40 (gratis og døgnåpen tjeneste)</p>
+            </div>
           </div>
         </div>
       </div>

@@ -19,50 +19,48 @@ const TermsService = () => {
               <div className="terms-content mt-4 mb-5 p-4">
                 <h1 className="text-center mb-4">Vilkår for bruk</h1>
                 <p className="version-info text-center mb-4">
-                  Sist oppdatert: 27. mars 2025
+                  Sist oppdatert: 29. mars 2025
                 </p>
 
-                <p>Velkommen til DesertSocial. Ved å bruke denne nettsiden og våre spill, godtar du følgende vilkår. Dersom du ikke godtar disse, vennligst ikke bruk tjenesten.</p>
+                <p>Velkommen til DesertSocial! Ved å bruke nettstedet vårt eller spille spillene vi tilbyr, godtar du å følge disse vilkårene. Dersom du ikke er enig i vilkårene, ber vi deg om å avslutte bruken av tjenesten.</p>
 
-                <h2>🎮 1. Om Tjenesten</h2>
+                <h2>🎮 1. Om tjenesten</h2>
+                <p>DesertSocial tilbyr sosiale casinospill som er helt gratis å spille.</p>
                 <ul>
-                  <li>DesertSocial tilbyr 100 % gratis sosiale casinospill.</li>
-                  <li>Det er ingen mulighet for å satse, kjøpe eller vinne ekte penger eller fysiske premier.</li>
-                  <li>Dette er ikke et nettcasino eller pengespill i henhold til norsk lov.</li>
-                  <li>Alle spill er utelukkende utviklet for underholdning, og har ingen økonomisk verdi.</li>
+                  <li>Det er ikke mulig å satse, kjøpe eller vinne ekte penger eller fysiske gjenstander.</li>
+                  <li>Tjenesten er ikke et pengespill eller nettcasino i henhold til norsk lov.</li>
+                  <li>Spillene er kun ment for underholdning og har ingen økonomisk verdi.</li>
                 </ul>
 
-                <h2>🔞 2. Aldersbegrensning</h2>
+                <h2>🔞 2. Aldersgrense</h2>
+                <p>Tjenesten er kun tilgjengelig for personer over 18 år.</p>
+                <p>Ved å bruke nettstedet bekrefter du at du er myndig i henhold til lovverket i ditt hjemland.</p>
+
+                <h2>💳 3. Ingen penger, ingen kjøp</h2>
                 <ul>
-                  <li>Tjenesten er kun for personer som er 18 år eller eldre.</li>
-                  <li>Ved å bruke nettstedet bekrefter du at du er myndig i henhold til lovverket i ditt land.</li>
+                  <li>Ingen innskudd kreves eller aksepteres</li>
+                  <li>Ingen betalingsløsninger tilbys</li>
+                  <li>Ingen gevinster i form av ekte penger eller varer</li>
                 </ul>
+                <p>DesertSocial er og forblir 100 % gratis.</p>
 
-                <h2>💳 3. Ingen Penger, Ingen Kjøp</h2>
-                <ul>
-                  <li>💸 Du kan ikke gjøre innskudd</li>
-                  <li>🛒 Det finnes ingen betalingsløsninger</li>
-                  <li>🎁 Du kan ikke vinne ekte penger eller varer</li>
-                </ul>
-                <p>DesertSocial er helt gratis å bruke, og det finnes ingen funksjoner knyttet til ekte penger i noen del av tjenesten.</p>
+                <h2>🧠 4. Ansvarlig bruk</h2>
+                <p>Vi oppfordrer alle brukere til å spille med måte og som en form for underholdning.</p>
+                <p>Opplever du utfordringer knyttet til spillvaner? Besøk <a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">www.hjelpelinjen.no</a> – en gratis og anonym hjelpetjeneste i Norge.</p>
 
-                <h2>🧠 4. Ansvarlig Bruk</h2>
-                <p>Vi anbefaler alle brukere å spille ansvarlig og med måte.</p>
-                <p>Dersom du opplever problemer relatert til spilling, kontakt gjerne <a href="http://www.hjelpelinjen.no" target="_blank" rel="noopener noreferrer">www.hjelpelinjen.no</a> – en gratis og anonym hjelpetjeneste i Norge.</p>
+                <h2>🔐 5. Personvern og informasjonskapsler</h2>
+                <p>Vi samler inn anonym bruksstatistikk og benytter informasjonskapsler for å forbedre brukeropplevelsen.</p>
+                <p>Mer informasjon finner du i vår <Link to="/personvernregler">Personvernerklæring</Link>.</p>
 
-                <h2>🔐 5. Personvern og Informasjonskapsler</h2>
-                <p>Vi bruker informasjonskapsler og samler inn anonym bruksdata for å forbedre tjenesten.</p>
-                <p>Les mer i vår <Link to="/personvernregler">Personvernerklæring.</Link></p>
-
-                <h2>🔁 6. Endringer i Vilkårene</h2>
-                <p>Vi kan oppdatere <Link to="/tjenestevilkår">vilkårene</Link> uten forvarsel. Ved videre bruk av nettstedet godtar du endringene.</p>
+                <h2>🔁 6. Endringer i vilkårene</h2>
+                <p>Vilkårene kan oppdateres uten forvarsel. Ved å fortsette å bruke nettstedet, aksepterer du automatisk eventuelle endringer.</p>
 
                 <h2>📬 7. Kontakt</h2>
-                <p>Har du spørsmål om disse vilkårene? Kontakt oss:</p>
+                <p>Har du spørsmål eller ønsker å komme i kontakt med oss?</p>
                 <p>DesertSocial AS</p>
-                <p>📍 Dronning Eufemias gate 16, 0191 Oslo, Norge</p>
-                <p>📧 E-post: meister@gmail.com</p>
-                <p>📞 Telefon: +47 22 83 70 10</p>
+                <p>📍 Hovfaret 4, 0275 Oslo, Norge</p>
+                <p>📧 E-post: desertsocial@gmail.com</p>
+                <p>📞 Telefon: +47 22 44 80 80</p>
               </div>
             </Col>
           </Row>

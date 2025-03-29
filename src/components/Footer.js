@@ -11,39 +11,39 @@ export default function Footer(){
             <Container>
                 <Row>
                     <Col className="text-center py-5">
-                    <Link to="/"><img src={logo} alt="Logo" /></Link>
+                        <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </Col>
                 </Row>
             </Container>
 
-            {/* New Contact Information Section */}
+            {/* Contact Information Section */}
             <Container className="contact-info-section py-5">
-                <Row>
+                <Row className="justify-content-center">
                     <Col md={4} className="contact-item">
                         <div className="contact-icon">
-                            <i className="fas fa-phone" style={{ color: '#B4975A' }}></i>
+                            <span>📞</span>
                         </div>
                         <div className="contact-content">
                             <h4 className="contact-title">Telefon</h4>
-                            <p className="contact-text">+47 22 83 70 10</p>
+                            <p className="contact-text">+47 22 44 80 80</p>
                         </div>
                     </Col>
                     <Col md={4} className="contact-item">
                         <div className="contact-icon">
-                            <i className="fas fa-envelope" style={{ color: '#B4975A' }}></i>
+                            <span>📧</span>
                         </div>
                         <div className="contact-content">
                             <h4 className="contact-title">E-post</h4>
-                            <p className="contact-text">meister@gmail.com</p>
+                            <p className="contact-text">desertsocial@gmail.com</p>
                         </div>
                     </Col>
                     <Col md={4} className="contact-item">
                         <div className="contact-icon">
-                            <i className="fas fa-map-marker-alt" style={{ color: '#B4975A' }}></i>
+                            <span>📍</span>
                         </div>
                         <div className="contact-content">
                             <h4 className="contact-title">Adresse</h4>
-                            <p className="contact-text">Dronning Eufemiasgate 16,<br /> 0191 Oslo, Norway</p>
+                            <p className="contact-text">Hovfaret 4,<br />0275 Oslo, Norge</p>
                         </div>
                     </Col>
                 </Row>
