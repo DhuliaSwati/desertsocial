@@ -1236,7 +1236,7 @@ var slotConfig_5a = {
         popup.addButton('exitButton','exit_button', 'exit_button_hover', false, 165, -242  + yOffset);
 
         popup['supportButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['supportButton'].clickEvent.add(()=>{window.open("http://www.mkeystudio.com"); }, popup);
+        popup['supportButton'].clickEvent.add(()=>{window.open("https://www.desertsocial.social/kontakt-oss"); }, popup);
         
         popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
         popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
@@ -1294,10 +1294,10 @@ var slotConfig_5a = {
         popup.addButton('termsButton','extralong_button', 'extralong_button_hover', false, -2, 190 + yOffset);
 
         popup['privacyButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['privacyButton'].clickEvent.add(()=>{window.open("http://www.mkeystudio.com"); }, popup);
+        popup['privacyButton'].clickEvent.add(()=>{window.open("https://www.desertsocial.social/personvernregler"); }, popup);
         
         popup['termsButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['termsButton'].clickEvent.add(()=>{window.open("http://www.mkeystudio.com"); }, popup);
+        popup['termsButton'].clickEvent.add(()=>{window.open("https://www.desertsocial.social/tjenestevilkår"); }, popup);
 
         popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
         popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
